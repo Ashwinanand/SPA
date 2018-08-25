@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.js"></script>
+<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.js"></script>
+<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="personcontroller.js"></script>
+<script type="text/javascript" src="studentcontroller.js"></script>
+<script type="text/javascript" src="employeecontroller.js"></script>
+<script type="text/javascript" src="homecontroller.js"></script>
+<title>Insert title here</title>
+</head>
+<body ng-app="app">
+<!-- /persons ,  [V,C]  [persondetails.html,PersonCtrl]
+     /employees , [V,C] [employeedetails.html,EmployeeCtrl]
+     /students, [V,C]   [studentdetails.html,StudentCtrl]
+-->
+<a href="#/persons">PersonDetails </a> &nbsp; 
+<a href="#/employees">Employee Details</a> &nbsp; 
+<a href="#/students">Student details</a>
+<a href="#/home">Home Page</a>
+<div ng-view></div><!-- persondetails.html content, studentdetail.html, employeedetails.html -->
+
+
+</body>
+</html>

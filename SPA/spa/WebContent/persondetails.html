@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	Firstname in Ascending order
+	<table>
+		<thead>
+			<tr>
+				<th>Firstname</th>
+				<th>lastname</th>
+				<th>Email</th>
+				<th>Phonenumber</th>
+			</tr>
+		</thead>
+		<tbody>
+          <tr ng-repeat="p in persons | orderBy:'-firstname'"><!-- $scope.persons=[{},{},{}] -->
+          <td>{{p.firstname}}</td>
+          <td>{{p.lastname}}</td>
+          <td>{{p.email}}</td>
+          <td>{{p.phonenumber}}</td>
+          </tr>
+		</tbody>
+	</table>
+
+</body>
+</html>

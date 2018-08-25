@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+Employee Details<br>
+	<table>
+		<thead>
+			<tr>
+				<th>EmployeeNumber</th>
+				<th>Name</th>
+				<th>Salary</th>
+				<th>Department</th>
+			</tr>
+		</thead>
+		<tbody>
+        <tr ng-repeat="e in employees"> 
+        <td>{{e.empno}}</td>
+        <td>{{e.empname}}</td>
+        <td>{{e.salary}}</td>
+        <td>{{e.dept}}</td>
+        </tr>		
+		</tbody>
+	</table>
+
+</body>
+</html>

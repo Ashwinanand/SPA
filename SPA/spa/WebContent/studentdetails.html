@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+Student Details<br>
+<table>
+		<thead>
+			<tr>
+				<th>RollNo</th>
+				<th>Name</th>
+				<th>Marks</th>
+			</tr>
+		</thead>
+		<tbody>
+        <tr ng-repeat="s in students"> 
+        <td>{{s.rollno}}</td>
+        <td>{{s.name}}</td>
+        <td>{{s.marks}}</td>
+        </tr>		
+		</tbody>
+	</table>
+
+
+</body>
+</html>
